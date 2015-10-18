@@ -1,0 +1,70 @@
+#include <iostream>
+#include <vector>
+#include <math.h>
+using namespace std;
+int main()
+{
+  vector<int> list;
+  int x;
+  int a;
+  int s;
+  int d;
+  int f;
+  int g;
+  int h;
+  int j;
+  int k;
+  int l;
+  int m;
+  int i;
+  int hj;
+  int al;
+  int prom;
+  int des;
+  int total;
+  cout << "Dame 10 numeros enteros de los cuales quieres saber su total, promedio y desviacion estandar"<< endl;
+  cout<< "Dame el primero" << endl;
+  cin >> a;
+  cout<< "Dame el segundo" << endl;
+  cin >> s;
+  cout<< "Dame el tercero" << endl;
+  cin >> d;
+  cout<< "Dame el cuarto" << endl;
+  cin >> f;
+  cout<< "Dame el quinto" << endl;
+  cin >> g;
+  cout<< "Dame el sexto" << endl;
+  cin >> h;
+  cout<< "Dame el septimo" << endl;
+  cin >> j;
+  cout<< "Dame el octavo" << endl;
+  cin >> k;
+  cout << "Dame el noveno" << endl;
+  cin >> l;
+  cout << "Dame el decimo" << endl;
+  cin >> m;
+  list.push_back(a);
+  list.push_back(s);
+  list.push_back(d);
+  list.push_back(f);
+  list.push_back(g);
+  list.push_back(h);
+  list.push_back(j);
+  list.push_back(k);
+  list.push_back(l);
+  list.push_back(m);
+  prom = (list[1] + list[2] + list[3] + list[4] + list[5] + list[6] + list[7] + list[8] + list[9] + list[0])/10;
+  total = list[1] + list[2] + list[3] + list[4] + list[5] + list[6] + list[7] + list[8] + list[9] + list[0];
+  hj = 0;
+  for (i=0;i<= prom;i++){
+    hj = (prom - list[i]) * (prom - list[i]);
+    al = hj + hj;
+  }
+  des =  sqrt(hj/prom);
+  cout<< "la desviacion estandar es "<< des << endl;
+  cout << "el promedio es " << prom << endl;
+  cout << "el total es " << total << endl;
+
+  return 0;
+
+}
