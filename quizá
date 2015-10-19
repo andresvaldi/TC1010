@@ -1,0 +1,26 @@
+# include <iostream>
+# include <vector>
+# include <math.h>
+using namespace std;
+
+int sumsquares( vector<int> list){
+  int a;
+  int sum = 0;
+  for(int i=0;i < list.size(); i++){
+    a = pow(list[i], 2);
+    sum = a + sum;
+//    cout << "just added to the sum: " << a << endl;
+  }
+  return sum;
+}
+int main(){
+  vector <int>vil(5);
+  vil[0] = 1;
+  vil[1] = 2;
+  vil[2] = 3;
+  vil[3] = 4;
+  vil[4] = 5;
+  int s = sumsquares(vil);
+  cout << s << endl;
+  return 0;
+}
