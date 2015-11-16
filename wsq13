@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+float babi(int n)
+{
+  int i;
+  float t;
+  float p;
+  float r;
+  float b;
+
+  for(i=1;r<n;i++)
+  {
+    r=i*i;
+    b=i-1;
+  }
+
+  for(i=1;i<10;i++)
+  {
+    t=n/b;
+    p=b+(t-b)/2;
+    b=p;
+  }
+  return p;
+}
+
+
+int main()
+{
+  int n;
+  cout << "Dame el numero al cual quieres sacarle la raiz ";
+  cin >> n;
+
+  cout << "La raiz es: " << babi(n) << endl;
+  return 0;
+}
