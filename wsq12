@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int mindiv( int a, int b )
+{
+   if( a < b )
+      return mindiv( b, a );
+
+   int f = a % b;
+   if( f == 0 )
+     return b;
+   else
+      return mindiv( b, f );
+}
+
+int main(){
+  int a;
+  int b;
+  cout<<"enter first number, please"<<endl;
+  cin>>a;
+  cout<<"enter second number, please"<<endl;
+  cin>>b;
+
+  cout<<mindiv(a,b)<<endl;
+return 0;
+}
