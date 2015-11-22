@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+float e(float x){
+  float i=1;
+  float nume;
+  float numre;
+  float numre1;
+  while (i<1000){
+  nume= 1/ x * i;
+  x = x * i;
+  i++;
+  numre1 = nume;
+  }
+  numre= 1 + numre1;
+  return numre;
+
+}
+int main(){
+  float x;
+  cout << "Dame el numero que deseas" << endl;
+  cin >> x;
+  cout << e(x) << endl;
+  
+  return 0;
+
+}
